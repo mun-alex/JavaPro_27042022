@@ -5,16 +5,16 @@ import kz.bitlab.pro.lesson2.HW.Phone;
 public class TestCW {
     public static void main(String[] args) {
         Customer azamat = new Customer();
-        azamat.setName("7");
+
+        azamat.setName("Azamat");
         System.out.println(azamat.getName());
-        azamat.bankAccount = new BankAccount();
-        azamat.bankAccount.setIban("KZ1234567890123456785455");
-        System.out.println(azamat.bankAccount.getIban());
 
+//        azamat.bankAccount = new BankAccount();
+        azamat.setBankAccount(new BankAccount());
 
-
-
-
+//        azamat.bankAccount.setIban("KZ1234567890123456785455");
+        azamat.getBankAccount().setIban("KZ1234567890123456785455");
+        System.out.println(azamat.getBankAccount().getIban());
 
 //        azamat.name = "Azamat";
 //        azamat.surname = "Bagdat";
@@ -39,8 +39,22 @@ public class TestCW {
 //        System.out.println(azamat.name + " " + azamat.surname);
 //        System.out.println(azamat.bankAccount.iban);
 //        System.out.println(azamat.bankAccount.getBalance());
-//
-//        Phone iphone = new Phone("iPhone", "12", 1_000_000);
-//        iphone.getData();
+
+        Phone iphone = new Phone("iPhone", "12", 1_000_000);
+        iphone.getData();
+
+        Customer zarina = new Customer();
+        zarina.setName("Zarina");
+        zarina.setAge(18);
+        zarina.setPhone(new Phone("Nokia", "3310", 5000));
+        System.out.println("Zarina's phone");
+        zarina.getPhone().getData();
+
+        Customer shyryn = new Customer();
+        shyryn.setName("Shyryn");
+        shyryn.setAge(18);
+        shyryn.setPhone(new Phone("Samsung", "S21", 120000));
+        System.out.println("Shyryn's phone");
+        shyryn.getPhone().getData();
     }
 }
