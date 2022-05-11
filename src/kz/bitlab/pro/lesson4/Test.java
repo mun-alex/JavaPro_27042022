@@ -4,8 +4,10 @@ public class Test {
     public static void main(String[] args) {
 
         Worker doctor = new Doctor();
-        Worker driver = new Driver();
+        Driver driver = new Driver();
         Doctor doctor1 = new Doctor();
+
+
 
     }
 }
