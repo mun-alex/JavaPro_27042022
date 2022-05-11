@@ -1,4 +1,4 @@
-package kz.bitlab.pro.lesson4.CW;
+package kz.bitlab.pro.lesson4.cw;
 
 public class Ex1 {
     public static void main(String[] args) {

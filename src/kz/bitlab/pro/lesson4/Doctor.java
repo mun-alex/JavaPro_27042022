@@ -17,4 +17,8 @@ public class Doctor extends Worker {
     void doWork() {
         System.out.println("doctor is working");
     }
+
+     public void doDiagnos() {
+        System.out.println("diagnos");
+    }
 }

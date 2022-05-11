@@ -6,7 +6,6 @@ public class Test {
         Worker doctor = new Doctor();
         Worker driver = new Driver();
         Doctor doctor1 = new Doctor();
-        doctor.doWork();
-        driver.doWork();
+
     }
 }
