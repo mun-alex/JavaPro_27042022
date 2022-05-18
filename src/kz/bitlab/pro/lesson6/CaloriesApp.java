@@ -75,7 +75,6 @@ public class CaloriesApp extends JFrame {
                 Burger burger = new Burger(burgerName, meatAmount, meatType);
                 double result = burger.getCalories();
                 labelResult.setText("Бургер " + burgerName + "содержит: " + result + " калорий");
-
             }
         });
 
