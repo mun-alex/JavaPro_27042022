@@ -5,12 +5,14 @@ import java.util.*;
 public class TestMap {
     public static void main(String[] args) {
         Map<Integer, String> students = new TreeMap<>();
-        students.put(6, "Batryhan");
+        students.put(6, null);
         students.put(2, "Aidar");
         students.put(5, "Zarina");
         students.put(4, "Shyryn");
         students.put(3, "Rahat");
         students.put(1, "Azamat");
+        System.out.println(students);
+        students.replace(2, "Ivan");
         System.out.println(students);
 
         List<String> kz = new ArrayList<>();

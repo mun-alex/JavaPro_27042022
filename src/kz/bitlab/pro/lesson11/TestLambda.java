@@ -12,9 +12,10 @@ public class TestLambda {
         Student st4 = new Student("Aidar", 25, 75);
         Student st5 = new Student("Rahat", 22, 70);
         Student st6 = new Student("Shyryn", 17, 80);
+        Student st7 = new Student("Azamat", 20, 87);
 
         List<Student> studentList = new ArrayList<>(Arrays.asList(
-                st1, st2, st3, st4, st5, st6
+                st1, st2, st3, st4, st5, st6, st7
         ));
 
 //        for(Student student: studentList) {
@@ -41,6 +42,13 @@ public class TestLambda {
         for (Student student: studentList) {
             if (stFilter.filter(student)) System.out.println(student.toString());
         }
+
+        System.out.println("=======================");
+        studentList.stream()
+                .filter(student -> student.getAge() > 18 && student.getGrade() > 80)
+                .map(student -> student.getName().toUpperCase())
+                .distinct()
+                .forEach(student -> System.out.println(student));
     }
 
 //    public static boolean studentAgeFilter(Student student) {
